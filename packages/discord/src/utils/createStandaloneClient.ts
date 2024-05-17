@@ -1,5 +1,5 @@
 import HyperExpress from 'hyper-express';
-import { createHyperExpressAdapter, type Events } from '../';
+import { createHyperExpressAdapter, type Events } from '../index.js';
 
 /**
  * Start the bot using a standalone web server

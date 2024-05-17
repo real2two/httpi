@@ -8,7 +8,7 @@ import {
   createPingEvent,
   type Command,
   type Component,
-} from '../';
+} from '../index.js';
 
 /**
  * Create all of the events
@@ -16,8 +16,8 @@ import {
  * @returns The events
  */
 export function createEvents({
-  commands,
-  components,
+  commands = [],
+  components = [],
 }: {
   commands: Command[];
   components: Component[];

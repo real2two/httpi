@@ -1,5 +1,5 @@
-import { Command } from './Command';
-import type { Subcommand } from './Subcommand';
+import { Command } from './Command.js';
+import type { Subcommand } from './Subcommand.js';
 import type {
   APIApplicationCommandOption,
   RESTPostAPIChatInputApplicationCommandsJSONBody,

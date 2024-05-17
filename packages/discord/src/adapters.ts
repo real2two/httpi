@@ -1,1 +1,1 @@
-export * from './adapters/hyperExpress';
+export * from './adapters/hyperExpress.js';

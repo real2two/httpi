@@ -6,7 +6,7 @@ export default new Subcommand({
     name: 'hello',
     description: 'Hey there!',
   },
-  execute: ({ respond }) => {
+  execute({ respond }) {
     respond({
       type: InteractionResponseType.ChannelMessageWithSource,
       data: {

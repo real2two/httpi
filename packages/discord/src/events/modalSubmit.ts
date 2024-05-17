@@ -1,4 +1,4 @@
-import { Event, type Component, type InteractionRequestDataWithUser } from '../';
+import { Event, type Component, type InteractionRequestDataWithUser } from '../index.js';
 
 /**
  * Create a modal submit event

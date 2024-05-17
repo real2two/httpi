@@ -1,4 +1,4 @@
-import { Event } from '../';
+import { Event } from '../index.js';
 import { InteractionResponseType } from 'discord-api-types/v10';
 
 /**

@@ -1,4 +1,4 @@
-import { Command } from '../';
+import { Command } from '../index.js';
 
 export async function createCommands({
   id,

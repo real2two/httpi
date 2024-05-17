@@ -1,5 +1,5 @@
 import type { RESTPostAPIApplicationCommandsJSONBody } from 'discord-api-types/v10';
-import type { InteractionRequestWithUser } from '../';
+import type { InteractionRequestWithUser } from '../index.js';
 
 export class Command {
   data: RESTPostAPIApplicationCommandsJSONBody;

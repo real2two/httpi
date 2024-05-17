@@ -1,3 +1,3 @@
-export * from './types/discord';
-export * from './types/events';
-export * from './types/interaction';
+export * from './types/discord.js';
+export * from './types/events.js';
+export * from './types/interaction.js';

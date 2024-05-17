@@ -1,4 +1,4 @@
-import type { Event } from '../';
+import type { Event } from '../index.js';
 import type { InteractionType } from 'discord-api-types/v10';
 
 export interface Events {

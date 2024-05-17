@@ -1,3 +1,3 @@
-export * from './utils/createCommands';
-export * from './utils/createEvents';
-export * from './utils/createStandaloneClient';
+export * from './utils/createCommands.js';
+export * from './utils/createEvents.js';
+export * from './utils/createStandaloneClient.js';

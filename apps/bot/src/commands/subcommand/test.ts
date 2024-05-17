@@ -7,18 +7,38 @@ export default new Subcommand({
     description: 'This is a test subcommand',
     options: [
       {
-        type: ApplicationCommandOptionType.Boolean,
+        type: ApplicationCommandOptionType.String,
         name: 'value',
-        description: 'This is a test boolean',
+        description: 'This is a test value',
         required: true,
+        autocomplete: true,
       },
     ],
   },
-  execute: ({ interaction, respond }) => {
+  autocomplete({ interaction, respond }) {
+    const value = interaction.data.options[0].options[0].value;
+    respond({
+      type: InteractionResponseType.ApplicationCommandAutocompleteResult,
+      data: {
+        choices: [
+          {
+            name: 'option1',
+            value: 'option1',
+          },
+          {
+            name: 'option2',
+            value: 'option2',
+          },
+        ],
+      },
+    });
+  },
+  execute({ interaction, respond }) {
+    const value = interaction.data.options[0].options[0].value;
     respond({
       type: InteractionResponseType.ChannelMessageWithSource,
       data: {
-        content: `This is a test subcommand. The given value is \`${interaction.data.options[0].options[0].value}\`.`,
+        content: `This is a test subcommand. The given value is \`${value}\`.`,
       },
     });
   },

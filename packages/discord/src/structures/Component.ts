@@ -1,4 +1,4 @@
-import type { InteractionRequestWithUser } from '../';
+import type { InteractionRequestWithUser } from '../index.js';
 
 export class Component {
   customId: RegExp;

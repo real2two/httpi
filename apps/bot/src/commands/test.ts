@@ -21,7 +21,7 @@ export default new Command({
       InteractionContextType.PrivateChannel,
     ],
   },
-  execute: async ({ respond }) => {
+  async execute({ respond }) {
     await respond({
       type: InteractionResponseType.ChannelMessageWithSource,
       data: {

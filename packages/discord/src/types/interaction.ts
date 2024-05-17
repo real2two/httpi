@@ -5,7 +5,7 @@ import type {
   CamelizedInteraction,
   CamelizedUser,
   CustomAPIInteractionResponseUpdateMessage,
-} from './discord';
+} from './discord.js';
 
 export type InteractionResponse = ObjectToCamel<CustomAPIInteractionResponse>;
 export type InteractionUpdateResponse =

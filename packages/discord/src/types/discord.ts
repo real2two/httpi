@@ -15,7 +15,7 @@ import type {
   RESTPatchAPIWebhookResult,
 } from 'discord-api-types/v10';
 import type { ObjectToCamel } from 'ts-case-convert/lib/caseConvert';
-import type { InteractionResponseAttachment } from './interaction';
+import type { InteractionResponseAttachment } from './interaction.js';
 
 export type CamelizedRESTPatchAPIWebhookResult = ObjectToCamel<RESTPatchAPIWebhookResult>;
 

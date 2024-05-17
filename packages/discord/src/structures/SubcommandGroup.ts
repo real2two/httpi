@@ -1,4 +1,4 @@
-import { Subcommand } from './Subcommand';
+import { Subcommand } from './Subcommand.js';
 import {
   ApplicationCommandOptionType,
   type APIApplicationCommandSubcommandGroupOption,

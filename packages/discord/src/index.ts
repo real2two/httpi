@@ -1,6 +1,6 @@
-export * from './adapters';
-export * from './events';
-export * from './structures';
-export * from './utils';
+export * from './adapters.js';
+export * from './events.js';
+export * from './structures.js';
+export * from './utils.js';
 
-export type * from './types';
+export type * from './types.js';

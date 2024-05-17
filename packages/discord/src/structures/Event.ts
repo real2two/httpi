@@ -1,4 +1,4 @@
-import type { InteractionRequest } from '../';
+import type { InteractionRequest } from '../index.js';
 
 export class Event {
   execute: InteractionRequest;

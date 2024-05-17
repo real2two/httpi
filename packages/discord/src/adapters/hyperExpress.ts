@@ -7,7 +7,7 @@ import { FormDataEncoder } from 'form-data-encoder';
 import { Readable } from 'stream';
 
 import type { RESTAPIAttachment } from 'discord-api-types/v10';
-import type { CamelizedInteraction, InteractionResponseAttachment, Events } from '..';
+import type { CamelizedInteraction, InteractionResponseAttachment, Events } from '../index.js';
 
 /**
  * Create a HyperExpress middleware for HTTP interactions
