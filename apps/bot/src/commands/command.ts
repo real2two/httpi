@@ -9,7 +9,7 @@ import {
 
 export default new Command({
   data: {
-    name: 'test',
+    name: 'command',
     description: 'This is a test command',
     integration_types: [
       ApplicationIntegrationType.GuildInstall,

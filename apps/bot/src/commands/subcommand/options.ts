@@ -3,8 +3,8 @@ import { ApplicationCommandOptionType, InteractionResponseType } from 'discord-a
 
 export default new Subcommand({
   data: {
-    name: 'test',
-    description: 'This is a test subcommand',
+    name: 'options',
+    description: 'This is a test subcommand with options',
     options: [
       {
         type: ApplicationCommandOptionType.String,
@@ -17,6 +17,8 @@ export default new Subcommand({
   },
   autocomplete({ interaction, respond }) {
     const value = interaction.data.options[0].options[0].value;
+    console.log('Autocomplete value', value);
+
     respond({
       type: InteractionResponseType.ApplicationCommandAutocompleteResult,
       data: {
@@ -35,6 +37,8 @@ export default new Subcommand({
   },
   execute({ interaction, respond }) {
     const value = interaction.data.options[0].options[0].value;
+    console.log('Command value', value);
+
     respond({
       type: InteractionResponseType.ChannelMessageWithSource,
       data: {

@@ -1,8 +1,8 @@
 import { CommandWithSubcommands } from '@/discord';
 import { ApplicationIntegrationType, InteractionContextType } from 'discord-api-types/v10';
 
-import testSubcommand from './subcommand/test';
 import groupSubcommand from './subcommand/group';
+import optionsSubcommand from './subcommand/options';
 
 export default new CommandWithSubcommands({
   data: {
@@ -18,5 +18,5 @@ export default new CommandWithSubcommands({
       InteractionContextType.PrivateChannel,
     ],
   },
-  subcommands: [testSubcommand, groupSubcommand],
+  subcommands: [groupSubcommand, optionsSubcommand],
 });
