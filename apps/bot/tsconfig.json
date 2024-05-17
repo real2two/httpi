@@ -1,0 +1,5 @@
+{
+  "extends": "@/tsconfig/base.json",
+  "include": ["**/*.ts", "**/*.tsx", "../../packages/discord/src/utils/createEvents.ts"],
+  "exclude": ["node_modules"]
+}

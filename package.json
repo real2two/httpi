@@ -1,0 +1,23 @@
+{
+  "name": "capturebot",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "start": "dotenv -- turbo run start",
+    "dev": "dotenv -- turbo run dev",
+    "lint": "turbo run lint",
+    "format": "biome format --write ./",
+    "commands/create": "cd apps/web && pnpm commands/create"
+  },
+  "dependencies": {
+    "dotenv-cli": "^7.4.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
+    "turbo": "^1.13.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

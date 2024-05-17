@@ -1,0 +1,42 @@
+{
+  "name": "@/bot",
+  "type": "module",
+  "private": true,
+  "main": "src/http/clusters.ts",
+  "scripts": {
+    "start": "dotenv -e ../../.env -- tsx .",
+    "dev": "nodemon",
+    "lint": "eslint ./**/*.ts",
+    "format": "cd ../../ && pnpm format",
+    "commands/create": "dotenv -e ../../.env -- tsx tools/createCommands.ts"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": ["@/eslint-config"]
+  },
+  "nodemonConfig": {
+    "ignore": [".git", "node_modules"],
+    "watch": ["../../"],
+    "exec": "npm start",
+    "ext": "ts, js"
+  },
+  "dependencies": {
+    "@/discord": "workspace:*",
+    "@/env": "workspace:*",
+    "@discordjs/core": "^1.2.0",
+    "@discordjs/rest": "^2.3.0",
+    "dotenv-cli": "^7.4.2",
+    "hyper-express": "^6.16.1",
+    "ts-case-convert": "^2.0.7",
+    "tsx": "^4.10.3",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@/eslint-config": "workspace:*",
+    "@/tsconfig": "workspace:*",
+    "@types/node": "^20.12.12",
+    "discord-api-types": "^0.37.84",
+    "eslint": "^8.57.0",
+    "nodemon": "^3.1.0"
+  }
+}

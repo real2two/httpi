@@ -1,0 +1,13 @@
+{
+  "name": "@/eslint-config",
+  "main": "index.js",
+  "dependencies": {
+    "@typescript-eslint/parser": "^7.9.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-turbo": "^1.13.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

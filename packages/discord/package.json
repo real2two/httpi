@@ -1,0 +1,26 @@
+{
+  "name": "@/discord",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "eslint ./**/*.ts"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": ["@/eslint-config"]
+  },
+  "dependencies": {
+    "discord-api-types": "^0.37.84",
+    "discord-verify": "^1.2.0",
+    "form-data-encoder": "^4.0.2",
+    "formdata-node": "^6.0.3",
+    "hyper-express": "^6.16.1",
+    "ts-case-convert": "^2.0.7"
+  },
+  "devDependencies": {
+    "@/eslint-config": "workspace:*",
+    "@/tsconfig": "workspace:*",
+    "@types/node": "^20.12.12",
+    "eslint": "^8.57.0"
+  }
+}
