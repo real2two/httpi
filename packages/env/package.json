@@ -4,17 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "main": "src/index.ts",
-  "scripts": {
-    "lint": "eslint ./**/*.ts"
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": ["@/eslint-config"]
-  },
   "devDependencies": {
-    "@/eslint-config": "workspace:*",
     "@/tsconfig": "workspace:*",
-    "@types/node": "^20.12.12",
-    "eslint": "^8.57.0"
+    "@types/node": "^20.12.12"
   }
 }

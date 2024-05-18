@@ -6,9 +6,8 @@
     "start": "dotenv -- turbo run start",
     "dev": "dotenv -- turbo run dev",
     "build": "turbo run build",
-    "lint": "turbo run lint",
     "format": "biome format --write ./",
-    "pub": "turbo run build lint && changeset version && changeset publish",
+    "pub": "turbo run build format && changeset version && changeset publish",
     "commands/create": "cd apps/example && pnpm commands/create"
   },
   "dependencies": {

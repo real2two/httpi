@@ -18,12 +18,7 @@
     "url": "https://github.com/real2two/httpi/issues"
   },
   "scripts": {
-    "build": "unbuild",
-    "lint": "eslint ./**/*.ts"
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": ["@/eslint-config"]
+    "build": "unbuild"
   },
   "exports": {
     ".": {
@@ -37,10 +32,7 @@
     "ts-case-convert": "^2.0.7"
   },
   "devDependencies": {
-    "@/eslint-config": "workspace:*",
-    "@/tsconfig": "workspace:*",
     "@types/node": "^20.12.12",
-    "eslint": "^8.57.0",
     "typescript": "^5.4.5",
     "unbuild": "^2.0.0"
   }

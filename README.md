@@ -20,7 +20,6 @@ pnpm i # install dep
 pnpm start # start prod
 pnpm dev # start dev
 
-pnpm lint # eslint
 pnpm format # biome
 
 pnpm commands/create # creates application commands
