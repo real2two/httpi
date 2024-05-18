@@ -2,8 +2,6 @@
 
 This is a simple HTTP interactions library for Discord with built-in handlers, which supports TypeScript, CommonJS, and ES Modules.
 
-Quick note: You should be using something else to handle the REST API, such as [`@discordjs/core`](https://github.com/discordjs/discord.js/tree/main/packages/core), since that isn't built-in to this library.
-
 ## Create a standalone client
 
 ```js
