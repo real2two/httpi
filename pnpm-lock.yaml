@@ -116,9 +116,6 @@ importers:
       discord-api-types:
         specifier: ^0.37.84
         version: 0.37.84
-      discord-verify:
-        specifier: ^1.2.0
-        version: 1.2.0
       ts-case-convert:
         specifier: ^2.0.7
         version: 2.0.7
