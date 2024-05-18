@@ -1,5 +1,5 @@
 import HyperExpress from 'hyper-express';
-import { createHyperExpressAdapter } from './adapter';
+import { createHyperExpressAdapter } from './createHyperExpressAdapter';
 import type { Events } from '@httpi/client';
 
 /**
