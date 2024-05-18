@@ -12,6 +12,7 @@
     "commands/create": "cd apps/example && pnpm commands/create"
   },
   "dependencies": {
+    "@changesets/cli": "^2.27.2",
     "dotenv-cli": "^7.4.2"
   },
   "devDependencies": {
