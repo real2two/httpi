@@ -6,6 +6,7 @@
   "scripts": {
     "start": "dotenv -- turbo run start",
     "dev": "dotenv -- turbo run dev",
+    "build": "turbo run build",
     "lint": "turbo run lint",
     "format": "biome format --write ./",
     "commands/create": "cd apps/example && pnpm commands/create"

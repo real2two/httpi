@@ -17,7 +17,7 @@
     "url": "https://github.com/real2two/httpi/issues"
   },
   "scripts": {
-    "prepare": "unbuild",
+    "build": "unbuild",
     "lint": "eslint ./**/*.ts"
   },
   "eslintConfig": {
