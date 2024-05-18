@@ -1,5 +1,6 @@
 {
   "name": "@httpi/client",
+  "private": false,
   "version": "1.0.0",
   "description": "A simple HTTP interactions library for Discord with built-in handlers",
   "author": "real2two",
