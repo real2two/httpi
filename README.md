@@ -15,7 +15,7 @@ Click [here](https://github.com/real2two/httpi/tree/main/apps/example) to check 
 Here are the following commands you can run:
 
 ```bash
-httpi_transparent.png
+pnpm i # install dep
 
 pnpm start # start prod
 pnpm dev # start dev
