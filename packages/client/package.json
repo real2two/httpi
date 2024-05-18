@@ -7,14 +7,14 @@
   "main": "./dist/index.cjs",
   "types": "./dist/index.d.ts",
   "license": "CC0-1.0",
-  "homepage": "https://github.com/real2two/http-interactions-template",
+  "homepage": "https://github.com/real2two/httpi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/real2two/http-interactions-template.git",
+    "url": "https://github.com/real2two/httpi.git",
     "directory": "packages/discord"
   },
   "bugs": {
-    "url": "https://github.com/real2two/http-interactions-template/issues"
+    "url": "https://github.com/real2two/httpi/issues"
   },
   "scripts": {
     "prepare": "unbuild",

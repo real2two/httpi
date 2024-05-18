@@ -95,29 +95,29 @@ Here are some useful links that has an example to do something that might've not
 
 ### Client
 
-- [Create a standalone client](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/http/listen.ts)
-- [Use the HyperExpress adapter](https://github.com/real2two/http-interactions-template/blob/main/packages/discord/src/utils/createStandaloneClient.ts)
-- [Multi-threading (for scaling)](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/http/clusters.ts)
+- [Create a standalone client](https://github.com/real2two/httpi/blob/main/apps/example/src/http/listen.ts)
+- [Use the HyperExpress adapter](https://github.com/real2two/httpi/blob/main/packages/discord/src/utils/createStandaloneClient.ts)
+- [Multi-threading (for scaling)](https://github.com/real2two/httpi/blob/main/apps/example/src/http/clusters.ts)
 
 ### Commands
 
-- [Create an array of commands](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/utils/commands.ts)
-- [Create a chat input command](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/command.ts)
-- [Create a command with subcommands](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand.ts)
-- [Create a user command](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/userRightClick.ts)
-- [Create a message command](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/messageRightClick.ts)
+- [Create an array of commands](https://github.com/real2two/httpi/blob/main/apps/example/src/utils/commands.ts)
+- [Create a chat input command](https://github.com/real2two/httpi/blob/main/apps/example/src/commands/command.ts)
+- [Create a command with subcommands](https://github.com/real2two/httpi/blob/main/apps/example/src/commands/subcommand.ts)
+- [Create a user command](https://github.com/real2two/httpi/blob/main/apps/example/src/commands/userRightClick.ts)
+- [Create a message command](https://github.com/real2two/httpi/blob/main/apps/example/src/commands/messageRightClick.ts)
 
 ### Subcommands
 
-- [Create a subcommand without options](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand/group/hello.ts)
-- [Create a subcommand with options](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand/options.ts)
-- [Create a subcommand group](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand/group.ts)
+- [Create a subcommand without options](https://github.com/real2two/httpi/blob/main/apps/example/src/commands/subcommand/group/hello.ts)
+- [Create a subcommand with options](https://github.com/real2two/httpi/blob/main/apps/example/src/commands/subcommand/options.ts)
+- [Create a subcommand group](https://github.com/real2two/httpi/blob/main/apps/example/src/commands/subcommand/group.ts)
 
 ### Components
 
-- [Create an array of components](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/utils/components.ts)
-- [Create a component](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/components/button.ts)
+- [Create an array of components](https://github.com/real2two/httpi/blob/main/apps/example/src/utils/components.ts)
+- [Create a component](https://github.com/real2two/httpi/blob/main/apps/example/src/components/button.ts)
 
 ### Utilities (unrelated to the library)
 
-- [Use @discord/core as a REST library](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/utils/rest.ts)
+- [Use @discord/core as a REST library](https://github.com/real2two/httpi/blob/main/apps/example/src/utils/rest.ts)
