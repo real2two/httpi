@@ -1,10 +1,8 @@
 # @/discord - A simple HTTP interactions library
 
-This is a simple HTTP interactions library I created, because I don't really like the other ones.
+This is a simple HTTP interactions library for Discord with built-in handlers, which supports TypeScript, CommonJS, and ES Modules.
 
-This supports TypeScript, CommonJS, and ES Modules.
-
-I tried to make it pretty simple as well, and you should be using something else to use the REST API, such as [`@discordjs/core`](https://github.com/discordjs/discord.js/tree/main/packages/core).
+Quick note: You should be using something else to handle the REST API, such as [`@discordjs/core`](https://github.com/discordjs/discord.js/tree/main/packages/core), since that isn't built-in to this library.
 
 ## Create a standalone client
 
@@ -95,32 +93,32 @@ process.exit();
 
 Not everything in the library is documented in `README.md`.
 
-Here are some useful links that has an example of how to do something that might've not been mentioned above:
+Here are some useful links that has an example to do something that might've not been mentioned above:
 
 ### Client
 
-- [Create standalone client](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/http/listen.ts)
-- [Example of how to use the HyperExpress adapater](https://github.com/real2two/http-interactions-template/blob/main/packages/discord/src/utils/createStandaloneClient.ts)
-- [Multi-threading (to scaling)](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/http/clusters.ts)
+- [Create a standalone client](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/http/listen.ts)
+- [Use the HyperExpress adapter](https://github.com/real2two/http-interactions-template/blob/main/packages/discord/src/utils/createStandaloneClient.ts)
+- [Multi-threading (for scaling)](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/http/clusters.ts)
 
 ### Commands
 
 - [Create an array of commands](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/utils/commands.ts)
-- [Create chat input command](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/command.ts)
-- [Create user command](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/userRightClick.ts)
-- [Create message command](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/messageRightClick.ts)
+- [Create a chat input command](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/command.ts)
+- [Create a user command](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/userRightClick.ts)
+- [Create a message command](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/messageRightClick.ts)
+- [Create a command with subcommands](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand.ts)
 
 ### Subcommands
 
-- [Create command with subcommands](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand.ts)
-- [Create subcommand without options](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand/group/hello.ts)
-- [Create subcommand with options](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand/options.ts)
-- [Create subcommand group](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand/group.ts)
+- [Create a subcommand without options](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand/group/hello.ts)
+- [Create a subcommand with options](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand/options.ts)
+- [Create a subcommand group](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand/group.ts)
 
 ### Components
 
 - [Create an array of components](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/utils/components.ts)
-- [Create component](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/components/button.ts)
+- [Create a component](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/components/button.ts)
 
 ### Utilities (unrelated to the library)
 
