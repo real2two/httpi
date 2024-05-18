@@ -1,6 +1,5 @@
 {
   "name": "@httpi/adapter-hyperexpress",
-  "private": false,
   "version": "1.0.0",
   "description": "HyperExpress adapters for httpi",
   "author": "real2two",
