@@ -1,4 +1,4 @@
-![httpi logo](../../assets/httpi_transparent_short.png)
+![httpi logo](../../assets/httpi_transparent.svg)
 
 # @httpi/client
 
