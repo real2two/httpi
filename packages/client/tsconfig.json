@@ -1,5 +1,5 @@
 {
   "extends": "@/tsconfig/base.json",
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "../adapter-hyperexpress/src/createStandaloneClient.ts"],
   "exclude": ["node_modules"]
 }

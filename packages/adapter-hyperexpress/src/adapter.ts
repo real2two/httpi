@@ -7,7 +7,7 @@ import { FormDataEncoder } from 'form-data-encoder';
 import { Readable } from 'stream';
 
 import type { RESTAPIAttachment } from 'discord-api-types/v10';
-import type { CamelizedInteraction, InteractionResponseAttachment, Events } from '../index.js';
+import type { CamelizedInteraction, InteractionResponseAttachment, Events } from '@httpi/client';
 
 /**
  * Create a HyperExpress middleware for HTTP interactions
@@ -92,8 +92,6 @@ export function createHyperExpressAdapter(opts: {
           // Responds normally (application/json)
           return res.json(objectToSnake(message)); // Puts response into snake case
         },
-        res,
-        req,
       });
     } catch (err) {
       return console.error(err);

@@ -1,5 +1,6 @@
 import env from '@/env';
-import { createEvents, createStandaloneClient } from '@httpi/client';
+import { createEvents } from '@httpi/client';
+import { createStandaloneClient } from '@httpi/adapter-hyperexpress';
 
 import commands from '../utils/commands';
 import components from '../utils/components';

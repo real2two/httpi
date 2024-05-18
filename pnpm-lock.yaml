@@ -30,6 +30,9 @@ importers:
       '@discordjs/rest':
         specifier: ^2.3.0
         version: 2.3.0
+      '@httpi/adapter-hyperexpress':
+        specifier: workspace:*
+        version: link:../../packages/adapter-hyperexpress
       '@httpi/client':
         specifier: workspace:*
         version: link:../../packages/client
@@ -65,7 +68,7 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0
 
-  packages/client:
+  packages/adapter-hyperexpress:
     dependencies:
       discord-api-types:
         specifier: ^0.37.84
@@ -82,6 +85,40 @@ importers:
       hyper-express:
         specifier: ^6.16.1
         version: 6.16.1
+      ts-case-convert:
+        specifier: ^2.0.7
+        version: 2.0.7
+    devDependencies:
+      '@/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@/tsconfig':
+        specifier: workspace:*
+        version: link:../tsconfig
+      '@httpi/client':
+        specifier: workspace:*
+        version: link:../client
+      '@types/node':
+        specifier: ^20.12.12
+        version: 20.12.12
+      eslint:
+        specifier: ^8.57.0
+        version: 8.57.0
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
+      unbuild:
+        specifier: ^2.0.0
+        version: 2.0.0(typescript@5.4.5)
+
+  packages/client:
+    dependencies:
+      discord-api-types:
+        specifier: ^0.37.84
+        version: 0.37.84
+      discord-verify:
+        specifier: ^1.2.0
+        version: 1.2.0
       ts-case-convert:
         specifier: ^2.0.7
         version: 2.0.7

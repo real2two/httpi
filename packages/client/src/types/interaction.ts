@@ -1,4 +1,3 @@
-import type HyperExpress from 'hyper-express';
 import type { ObjectToCamel } from 'ts-case-convert/lib/caseConvert';
 import type {
   CustomAPIInteractionResponse,
@@ -20,8 +19,6 @@ export interface InteractionRequestData {
   interaction: CamelizedInteraction;
   user?: CamelizedUser;
   respond: (message: InteractionResponse) => Promise<unknown>;
-  res: HyperExpress.Response<HyperExpress.DefaultResponseLocals>;
-  req: HyperExpress.Request<HyperExpress.DefaultRequestLocals>;
 }
 
 export interface InteractionRequestDataWithUser extends InteractionRequestData {

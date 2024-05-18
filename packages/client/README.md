@@ -2,13 +2,27 @@
 
 This is a simple HTTP interactions library for Discord with built-in handlers, which supports TypeScript, CommonJS, and ES Modules.
 
+Install using:
+
+```bash
+# npm
+npm i @httpi/client
+npm i @httpi/adapter-hyperexpress
+
+# yarn
+yarn add @httpi/client
+yarn add @httpi/adapter-hyperexpress
+
+# pnpm
+pnpm i @httpi/client
+pnpm i @httpi/adapter-hyperexpress
+```
+
 ## Create a standalone client
 
 ```js
-import {
-  createEvents,
-  createStandaloneClient,
-} from "@httpi/client";
+import { createEvents } from '@httpi/client';
+import { createStandaloneClient } from '@httpi/adapter-hyperexpress';
 
 createStandaloneClient({
   port: 3000,
@@ -96,7 +110,7 @@ Here are some useful links that has an example to do something that might've not
 ### Client
 
 - [Create a standalone client](https://github.com/real2two/httpi/blob/main/apps/example/src/http/listen.ts)
-- [Use the HyperExpress adapter](https://github.com/real2two/httpi/blob/main/packages/discord/src/utils/createStandaloneClient.ts)
+- [Use the HyperExpress adapter](https://github.com/real2two/httpi/blob/main/packages/client/src/utils/createStandaloneClient.ts)
 - [Multi-threading (for scaling)](https://github.com/real2two/httpi/blob/main/apps/example/src/http/clusters.ts)
 
 ### Commands
