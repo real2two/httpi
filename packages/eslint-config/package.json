@@ -1,5 +1,6 @@
 {
   "name": "@/eslint-config",
+  "private": true,
   "main": "index.js",
   "dependencies": {
     "@typescript-eslint/parser": "^7.9.0",
