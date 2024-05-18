@@ -1,4 +1,4 @@
-# @/discord - A simple HTTP interactions library
+# @httpi/client - A simple HTTP interactions library
 
 This is a simple HTTP interactions library for Discord with built-in handlers, which supports TypeScript, CommonJS, and ES Modules.
 
@@ -10,7 +10,7 @@ Quick note: You should be using something else to handle the REST API, such as [
 import {
   createEvents,
   createStandaloneClient,
-} from "@/discord";
+} from "@httpi/client";
 
 createStandaloneClient({
   port: 3000,
@@ -29,7 +29,7 @@ createStandaloneClient({
 Commands
 
 ```ts
-import { Command } from "@/discord";
+import { Command } from "@httpi/client";
 
 const helpCommand = new Command({
   data: {
@@ -54,7 +54,7 @@ export const commands = [
 Components
 
 ```ts
-import { Component } from "@/discord";
+import { Component } from "@httpi/client";
 
 const buttonComponent = new Component({
   customId: /^button$/,
@@ -76,7 +76,7 @@ export const components = [
 ## Create commands
 
 ```ts
-import { createCommands } from "@/discord";
+import { createCommands } from "@httpi/client";
 
 const result = await createCommands({
   id: "discord id here",

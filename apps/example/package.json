@@ -21,7 +21,7 @@
     "ext": "ts, js"
   },
   "dependencies": {
-    "@/discord": "workspace:*",
+    "@httpi/client": "workspace:*",
     "@/env": "workspace:*",
     "@discordjs/core": "^1.2.0",
     "@discordjs/rest": "^2.3.0",

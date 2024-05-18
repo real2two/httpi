@@ -21,9 +21,6 @@ importers:
 
   apps/example:
     dependencies:
-      '@/discord':
-        specifier: workspace:*
-        version: link:../../packages/discord
       '@/env':
         specifier: workspace:*
         version: link:../../packages/env
@@ -33,6 +30,9 @@ importers:
       '@discordjs/rest':
         specifier: ^2.3.0
         version: 2.3.0
+      '@httpi/client':
+        specifier: workspace:*
+        version: link:../../packages/client
       dotenv-cli:
         specifier: ^7.4.2
         version: 7.4.2
@@ -65,7 +65,7 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0
 
-  packages/discord:
+  packages/client:
     dependencies:
       discord-api-types:
         specifier: ^0.37.84

@@ -1,4 +1,4 @@
-import { Command } from '@/discord';
+import { Command } from '@httpi/client';
 
 import {
   ApplicationCommandType,

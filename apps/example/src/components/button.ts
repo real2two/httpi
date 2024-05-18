@@ -1,4 +1,4 @@
-import { Component } from '@/discord';
+import { Component } from '@httpi/client';
 import { InteractionResponseType, MessageFlags } from 'discord-api-types/v10';
 
 export default new Component({

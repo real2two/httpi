@@ -1,4 +1,4 @@
-import { CommandWithSubcommands } from '@/discord';
+import { CommandWithSubcommands } from '@httpi/client';
 import { ApplicationIntegrationType, InteractionContextType } from 'discord-api-types/v10';
 
 import groupSubcommand from './subcommand/group';

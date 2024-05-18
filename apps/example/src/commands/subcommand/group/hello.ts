@@ -1,4 +1,4 @@
-import { Subcommand } from '@/discord';
+import { Subcommand } from '@httpi/client';
 import { InteractionResponseType } from 'discord-api-types/v10';
 
 export default new Subcommand({

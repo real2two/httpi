@@ -8,7 +8,7 @@
     "dev": "dotenv -- turbo run dev",
     "lint": "turbo run lint",
     "format": "biome format --write ./",
-    "commands/create": "cd apps/bot && pnpm commands/create"
+    "commands/create": "cd apps/example && pnpm commands/create"
   },
   "dependencies": {
     "dotenv-cli": "^7.4.2"

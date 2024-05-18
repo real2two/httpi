@@ -1,5 +1,5 @@
 import env from '@/env';
-import { createEvents, createStandaloneClient } from '@/discord';
+import { createEvents, createStandaloneClient } from '@httpi/client';
 
 import commands from '../utils/commands';
 import components from '../utils/components';

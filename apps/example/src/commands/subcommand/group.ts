@@ -1,4 +1,4 @@
-import { SubcommandGroup } from '@/discord';
+import { SubcommandGroup } from '@httpi/client';
 
 import helloSubcommand from './group/hello';
 
