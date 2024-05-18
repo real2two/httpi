@@ -7,7 +7,7 @@
     "dev": "dotenv -- turbo run dev",
     "build": "turbo run build",
     "format": "biome format --write ./",
-    "pub": "turbo run build format && changeset version && changeset publish",
+    "pub": "pnpm format && turbo run build && changeset version && changeset publish",
     "commands/create": "cd apps/example && pnpm commands/create"
   },
   "dependencies": {
