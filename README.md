@@ -1,6 +1,8 @@
-# HTTP interaction Discord bot template
+# Discord-related utilities
 
-This is an HTTP interaction Discord bot template
+This repository is used for Discord-related utilities.
+
+If you're looking for the library `@/discord`, go to `packages/discord` or click [here](https://github.com/real2two/http-interactions-template/tree/main/packages/discord).
 
 ## Commands
 
