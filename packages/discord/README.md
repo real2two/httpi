@@ -105,9 +105,9 @@ Here are some useful links that has an example to do something that might've not
 
 - [Create an array of commands](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/utils/commands.ts)
 - [Create a chat input command](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/command.ts)
+- [Create a command with subcommands](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand.ts)
 - [Create a user command](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/userRightClick.ts)
 - [Create a message command](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/messageRightClick.ts)
-- [Create a command with subcommands](https://github.com/real2two/http-interactions-template/blob/main/apps/example/src/commands/subcommand.ts)
 
 ### Subcommands
 
