@@ -19,7 +19,7 @@ importers:
         specifier: ^1.13.3
         version: 1.13.3
 
-  apps/bot:
+  apps/example:
     dependencies:
       '@/discord':
         specifier: workspace:*

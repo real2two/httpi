@@ -1,5 +1,5 @@
 {
-  "name": "@/bot",
+  "name": "@/example",
   "type": "module",
   "private": true,
   "main": "src/http/clusters.ts",
