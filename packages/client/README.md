@@ -1,4 +1,6 @@
-# @httpi/client - A simple HTTP interactions library
+![httpi logo](../../assets/httpi_transparent_short.png)
+
+# @httpi/client
 
 This is a simple HTTP interactions library for Discord with built-in handlers, which supports TypeScript, CommonJS, and ES Modules.
 

@@ -1,4 +1,6 @@
-# httpi
+![httpi logo](assets/httpi_transparent_short.png)
+
+# About
 
 This repository contains a package to create a Discord HTTP interactions bot.
 
@@ -13,7 +15,7 @@ Click [here](https://github.com/real2two/httpi/tree/main/apps/example) to check 
 Here are the following commands you can run:
 
 ```bash
-pnpm i # install dep
+httpi_transparent.png
 
 pnpm start # start prod
 pnpm dev # start dev
