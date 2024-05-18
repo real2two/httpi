@@ -1,8 +1,21 @@
 {
   "name": "@/discord",
+  "version": "1.0.0",
+  "description": "A simple HTTP interactions library",
+  "author": "real2two",
   "type": "module",
   "main": "./dist/index.cjs",
   "types": "./dist/index.d.ts",
+  "license": "CC0-1.0",
+  "homepage": "https://github.com/real2two/http-interactions-template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/real2two/http-interactions-template.git",
+    "directory": "packages/discord"
+  },
+  "bugs": {
+    "url": "https://github.com/real2two/http-interactions-template/issues"
+  },
   "scripts": {
     "prepare": "unbuild",
     "lint": "eslint ./**/*.ts"
