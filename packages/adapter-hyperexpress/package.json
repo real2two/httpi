@@ -32,8 +32,7 @@
     "discord-verify": "^1.2.0",
     "form-data-encoder": "^4.0.2",
     "formdata-node": "^6.0.3",
-    "hyper-express": "^6.16.1",
-    "ts-case-convert": "^2.0.7"
+    "hyper-express": "^6.16.1"
   },
   "devDependencies": {
     "@httpi/client": "workspace:*",

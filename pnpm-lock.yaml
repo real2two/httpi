@@ -82,9 +82,6 @@ importers:
       hyper-express:
         specifier: ^6.16.1
         version: 6.16.1
-      ts-case-convert:
-        specifier: ^2.0.7
-        version: 2.0.7
     devDependencies:
       '@httpi/client':
         specifier: workspace:*
@@ -104,9 +101,6 @@ importers:
       discord-api-types:
         specifier: ^0.37.84
         version: 0.37.84
-      ts-case-convert:
-        specifier: ^2.0.7
-        version: 2.0.7
     devDependencies:
       '@types/node':
         specifier: ^20.12.12
@@ -2284,9 +2278,6 @@ packages:
   trim-newlines@3.0.1:
     resolution: {integrity: sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==}
     engines: {node: '>=8'}
-
-  ts-case-convert@2.0.7:
-    resolution: {integrity: sha512-Kqj8wrkuduWsKUOUNRczrkdHCDt4ZNNd6HKjVw42EnMIGHQUABS4pqfy0acETVLwUTppc1fzo/yi11+uMTaqzw==}
 
   tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
@@ -4775,8 +4766,6 @@ snapshots:
   touch@3.1.1: {}
 
   trim-newlines@3.0.1: {}
-
-  ts-case-convert@2.0.7: {}
 
   tslib@2.6.2: {}
 

@@ -1,14 +1,11 @@
-import type { ObjectToCamel } from 'ts-case-convert/lib/caseConvert';
-import type {
-  CustomAPIInteractionResponse,
-  CamelizedInteraction,
-  CamelizedUser,
-  CustomAPIInteractionResponseUpdateMessage,
-} from './discord.js';
+import {
+  APIBaseInteraction,
+  APIInteractionResponse,
+  APIUser,
+  InteractionType,
+} from 'discord-api-types/v10';
 
-export type InteractionResponse = ObjectToCamel<CustomAPIInteractionResponse>;
-export type InteractionUpdateResponse =
-  ObjectToCamel<CustomAPIInteractionResponseUpdateMessage>['data'];
+export type BaseInteraction = APIBaseInteraction<InteractionType, any>;
 
 export interface InteractionResponseAttachment {
   name: string;
@@ -16,13 +13,13 @@ export interface InteractionResponseAttachment {
 }
 
 export interface InteractionRequestData {
-  interaction: CamelizedInteraction;
-  user?: CamelizedUser;
-  respond: (message: InteractionResponse) => Promise<unknown>;
+  interaction: BaseInteraction;
+  user?: APIUser;
+  respond: (message: APIInteractionResponse) => Promise<unknown>;
 }
 
 export interface InteractionRequestDataWithUser extends InteractionRequestData {
-  user: CamelizedUser;
+  user: APIUser;
 }
 
 export type InteractionRequest = (data: InteractionRequestData) => unknown;

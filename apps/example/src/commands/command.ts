@@ -33,7 +33,7 @@ export default new Command({
               {
                 type: ComponentType.Button,
                 style: ButtonStyle.Primary,
-                customId: 'button',
+                custom_id: 'button',
                 label: 'Click here',
               },
             ],

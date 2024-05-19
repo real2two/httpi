@@ -1,13 +1,12 @@
 import crypto from 'crypto';
 import HyperExpress from 'hyper-express';
 import { verify } from 'discord-verify/node';
-import { objectToCamel, objectToSnake } from 'ts-case-convert';
 import { FormData } from 'formdata-node';
 import { FormDataEncoder } from 'form-data-encoder';
 import { Readable } from 'stream';
 
 import type { RESTAPIAttachment } from 'discord-api-types/v10';
-import type { CamelizedInteraction, InteractionResponseAttachment, Events } from '@httpi/client';
+import type { BaseInteraction, InteractionResponseAttachment, Events } from '@httpi/client';
 
 /**
  * Create a HyperExpress middleware for HTTP interactions
@@ -36,7 +35,7 @@ export function createHyperExpressAdapter(opts: {
     if (!isValid) return res.status(401).send('Invalid signature');
 
     // Handles interactions
-    const interaction = objectToCamel(JSON.parse(body)) as CamelizedInteraction; // Camelizes the request body
+    const interaction = JSON.parse(body) as BaseInteraction;
     try {
       return opts.events[interaction.type]?.execute({
         interaction,
@@ -64,7 +63,7 @@ export function createHyperExpressAdapter(opts: {
                 type: message.type,
                 data: {
                   // @ts-ignore
-                  ...objectToSnake(message.data),
+                  ...message.data,
                   attachments: messageAttachments,
                 },
               }),
@@ -90,7 +89,7 @@ export function createHyperExpressAdapter(opts: {
           }
 
           // Responds normally (application/json)
-          return res.json(objectToSnake(message)); // Puts response into snake case
+          return res.json(message);
         },
       });
     } catch (err) {

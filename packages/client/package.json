@@ -28,8 +28,7 @@
   },
   "files": ["dist", "package.json"],
   "dependencies": {
-    "discord-api-types": "^0.37.84",
-    "ts-case-convert": "^2.0.7"
+    "discord-api-types": "^0.37.84"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
