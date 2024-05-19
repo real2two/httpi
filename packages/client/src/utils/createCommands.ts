@@ -1,3 +1,5 @@
+import { Routes } from 'discord-api-types/v10';
+
 import { Command } from '../index.js';
 
 import { FetchLike } from '../types/createCommands.js';
@@ -8,7 +10,7 @@ export async function createCommands({
   commands,
   fetch = global.fetch,
 }: { id: string; token: string; commands: Command[], fetch?: FetchLike }) {
-  const res = await fetch(`https://discord.com/api/applications/${id}/commands`, {
+  const res = await fetch(Routes.applicationCommands(id), {
     method: 'put',
     headers: {
       authorization: `Bot ${token}`,
