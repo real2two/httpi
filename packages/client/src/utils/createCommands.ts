@@ -10,7 +10,7 @@ export async function createCommands({
   commands,
   fetch = global.fetch,
 }: { id: string; token: string; commands: Command[], fetch?: FetchLike }) {
-  const res = await fetch(Routes.applicationCommands(id), {
+  const res = await fetch(`https://discord.com/api${Routes.applicationCommands(id)}`, {
     method: 'put',
     headers: {
       authorization: `Bot ${token}`,
