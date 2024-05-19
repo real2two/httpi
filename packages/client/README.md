@@ -107,6 +107,14 @@ console.log(result);
 process.exit();
 ```
 
+## Unofficial adapters
+
+There is only one official adapter for this library currently and it's for HyperExpress.
+
+Here are a list of unofficial adapters:
+
+- [ElysiaJS adapter by desplmfao](https://github.com/desplmfao/httpi-elysia-adapter)
+
 ## More examples
 
 Not everything in the library is documented in `README.md`.
