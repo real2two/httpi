@@ -1,9 +1,10 @@
-import { Command } from './Command.js';
-import type { Subcommand } from './Subcommand.js';
 import type {
   APIApplicationCommandOption,
   RESTPostAPIChatInputApplicationCommandsJSONBody,
 } from 'discord-api-types/v10';
+
+import { Command } from './Command.js';
+import type { Subcommand } from './Subcommand.js';
 
 export class CommandWithSubcommands extends Command {
   /**

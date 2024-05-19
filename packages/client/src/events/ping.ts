@@ -1,5 +1,6 @@
-import { Event } from '../index.js';
 import { InteractionResponseType } from 'discord-api-types/v10';
+
+import { Event } from '../index.js';
 
 /**
  * Create a ping event

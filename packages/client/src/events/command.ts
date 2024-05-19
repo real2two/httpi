@@ -1,5 +1,6 @@
-import { Event, type Command, type InteractionRequestDataWithUser } from '../index.js';
 import { ApplicationCommandType } from 'discord-api-types/v10';
+
+import { Event, type Command, type InteractionRequestDataWithUser } from '../index.js';
 
 /**
  * Create a command event

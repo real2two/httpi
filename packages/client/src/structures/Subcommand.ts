@@ -3,6 +3,7 @@ import {
   APIApplicationCommandSubcommandGroupOption,
   ApplicationCommandOptionType,
 } from 'discord-api-types/v10';
+
 import type { InteractionRequestWithUser } from '../index.js';
 
 export class Subcommand {

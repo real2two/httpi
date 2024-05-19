@@ -1,5 +1,6 @@
-import type { Event } from '../index.js';
 import type { InteractionType } from 'discord-api-types/v10';
+
+import type { Event } from '../index.js';
 
 export interface Events {
   [InteractionType.Ping]: Event;

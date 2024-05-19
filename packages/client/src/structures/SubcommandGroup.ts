@@ -1,9 +1,10 @@
-import { Subcommand } from './Subcommand.js';
 import {
   ApplicationCommandOptionType,
   type APIApplicationCommandSubcommandGroupOption,
   type APIApplicationCommandSubcommandOption,
 } from 'discord-api-types/v10';
+
+import { Subcommand } from './Subcommand.js';
 
 export class SubcommandGroup extends Subcommand {
   /**
