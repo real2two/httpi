@@ -4,6 +4,8 @@
 
 This is a simple HTTP interactions library for Discord with built-in handlers, which supports TypeScript, CommonJS, and ES Modules.
 
+Discord server: [https://discord.gg/qd8J527bCX](https://discord.gg/qd8J527bCX)
+
 Install using:
 
 ```bash
@@ -25,6 +27,8 @@ pnpm i @httpi/adapter-hyperexpress
 ```js
 import { createEvents } from '@httpi/client';
 import { createStandaloneClient } from '@httpi/adapter-hyperexpress';
+
+// Under "INTERACTIONS ENDPOINT URL" on https://discord.dev, add your link with the path "/interactions".
 
 createStandaloneClient({
   port: 3000,
