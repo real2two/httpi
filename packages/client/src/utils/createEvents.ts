@@ -8,6 +8,7 @@ import {
   createPingEvent,
   type Command,
   type Component,
+  type Events,
 } from '../index.js';
 
 /**
@@ -21,7 +22,7 @@ export function createEvents({
 }: {
   commands: Command[];
   components: Component[];
-}) {
+}): Events {
   return {
     [InteractionType.ApplicationCommandAutocomplete]: createAutocompleteEvent(commands),
     [InteractionType.ApplicationCommand]: createCommandEvent(commands),
