@@ -15,7 +15,7 @@ pnpm i @httpi/adapter-uwebsockets
 ```js
 import uWebSockets from 'uWebSockets.js';
 import { createEvents } from '@httpi/client';
-import { createUWebsocketsAdapter } from './createUWebsocketsAdapter';
+import { createUWebsocketsAdapter } from '@httpi/adapter-uwebsockets';
 
 uWebSockets
   .App()

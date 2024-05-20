@@ -11,22 +11,22 @@ Install using:
 ```bash
 # npm
 npm i @httpi/client
-npm i @httpi/adapter-hyperexpress
+npm i @httpi/adapter-uwebsockets
 
 # yarn
 yarn add @httpi/client
-yarn add @httpi/adapter-hyperexpress
+yarn add @httpi/adapter-uwebsockets
 
 # pnpm
 pnpm i @httpi/client
-pnpm i @httpi/adapter-hyperexpress
+pnpm i @httpi/adapter-uwebsockets
 ```
 
 ### Create a standalone client
 
 ```js
 import { createEvents } from '@httpi/client';
-import { createStandaloneClient } from '@httpi/adapter-hyperexpress';
+import { createStandaloneClient } from '@httpi/adapter-uwebsockets';
 
 // Under "INTERACTIONS ENDPOINT URL" on https://discord.dev, add your link with the path "/interactions".
 
