@@ -1,7 +1,7 @@
 {
   "name": "@httpi/client",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple HTTP interactions library for Discord with built-in handlers",
   "author": "real2two",
   "type": "module",
@@ -32,7 +32,6 @@
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
-    "typescript": "^5.4.5",
     "unbuild": "^2.0.0"
   }
 }

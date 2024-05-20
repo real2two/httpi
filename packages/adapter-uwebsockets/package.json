@@ -1,8 +1,8 @@
 {
-  "name": "@httpi/adapter-hyperexpress",
+  "name": "@httpi/adapter-uwebsockets",
   "private": false,
-  "version": "1.0.2",
-  "description": "HyperExpress adapters for httpi",
+  "version": "1.0.0",
+  "description": "uWebSockets.js adapters for httpi",
   "author": "real2two",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -30,7 +30,7 @@
   "dependencies": {
     "discord-api-types": "^0.37.84",
     "discord-verify": "^1.2.0",
-    "hyper-express": "^6.16.1"
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
   },
   "devDependencies": {
     "@httpi/client": "workspace:*",

@@ -58,7 +58,7 @@ export interface CustomAPIInteractionResponseCallbackData
 export interface InteractionRequestData {
   interaction: BaseInteraction;
   user?: APIUser;
-  respond: (message: CustomAPIInteractionResponse) => Promise<unknown>;
+  respond: (message: CustomAPIInteractionResponse) => unknown | Promise<unknown>;
 }
 
 export interface InteractionRequestDataWithUser extends InteractionRequestData {

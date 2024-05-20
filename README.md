@@ -1,6 +1,6 @@
-![httpi logo](assets/httpi_transparent.svg)
+# ![httpi logo](assets/httpi_transparent.svg)
 
-# About
+## About
 
 This repository contains a package to create a Discord HTTP interactions bot.
 

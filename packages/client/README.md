@@ -1,8 +1,8 @@
-![httpi logo](../../assets/httpi_transparent.svg)
+# ![httpi logo](../../assets/httpi_transparent.svg)
 
-# @httpi/client
+## @httpi/client
 
-This is a simple HTTP interactions library for Discord with built-in handlers, which supports TypeScript, CommonJS, and ES Modules.
+A type-safe and performant HTTP interactions library for Discord with built-in handlers for TypeScript and JavaScript developers.
 
 Discord server: [https://discord.gg/qd8J527bCX](https://discord.gg/qd8J527bCX)
 
@@ -22,7 +22,7 @@ pnpm i @httpi/client
 pnpm i @httpi/adapter-hyperexpress
 ```
 
-## Create a standalone client
+### Create a standalone client
 
 ```js
 import { createEvents } from '@httpi/client';
@@ -42,7 +42,7 @@ createStandaloneClient({
 });
 ```
 
-## Store an array of commands and components separately
+### Store an array of commands and components separately
 
 Commands
 
@@ -91,7 +91,7 @@ export const components = [
 ];
 ```
 
-## Create commands
+### Create commands
 
 ```ts
 import { createCommands } from "@httpi/client";
@@ -107,27 +107,26 @@ console.log(result);
 process.exit();
 ```
 
-## Unofficial adapters
+### Adapters
 
-There is only one official adapter for this library currently and it's for HyperExpress.
+If you want to use this library with another HTTP server library, you can use one of these adapters:
 
-Here are a list of unofficial adapters:
-
+- [uWebSockets.js adapter by real2two](https://github.com/real2two/httpi/tree/main/packages/adapter-uwebsockets)
+- [HyperExpress adapter by real2two](https://github.com/real2two/httpi/tree/main/packages/adapter-hyperexpress)
 - [ElysiaJS adapter by desplmfao](https://github.com/desplmfao/httpi-elysia-adapter)
 
-## More examples
+### More examples
 
 Not everything in the library is documented in `README.md`.
 
 Here are some useful links that has an example to do something that might've not been mentioned above:
 
-### Client
+#### Client
 
 - [Create a standalone client](https://github.com/real2two/httpi/blob/main/apps/example/src/http/listen.ts)
-- [Use the HyperExpress adapter](https://github.com/real2two/httpi/blob/main/packages/client/src/utils/createStandaloneClient.ts)
 - [Multi-threading (for scaling)](https://github.com/real2two/httpi/blob/main/apps/example/src/http/clusters.ts)
 
-### Commands
+#### Commands
 
 - [Create an array of commands](https://github.com/real2two/httpi/blob/main/apps/example/src/utils/commands.ts)
 - [Create a chat input command](https://github.com/real2two/httpi/blob/main/apps/example/src/commands/command.ts)
@@ -135,17 +134,17 @@ Here are some useful links that has an example to do something that might've not
 - [Create a user command](https://github.com/real2two/httpi/blob/main/apps/example/src/commands/userRightClick.ts)
 - [Create a message command](https://github.com/real2two/httpi/blob/main/apps/example/src/commands/messageRightClick.ts)
 
-### Subcommands
+#### Subcommands
 
 - [Create a subcommand without options](https://github.com/real2two/httpi/blob/main/apps/example/src/commands/subcommand/group/hello.ts)
 - [Create a subcommand with options](https://github.com/real2two/httpi/blob/main/apps/example/src/commands/subcommand/options.ts)
 - [Create a subcommand group](https://github.com/real2two/httpi/blob/main/apps/example/src/commands/subcommand/group.ts)
 
-### Components
+#### Components
 
 - [Create an array of components](https://github.com/real2two/httpi/blob/main/apps/example/src/utils/components.ts)
 - [Create a component](https://github.com/real2two/httpi/blob/main/apps/example/src/components/button.ts)
 
-### Utilities (unrelated to the library)
+#### Utilities (unrelated to the library)
 
 - [Use @discord/core as a REST library](https://github.com/real2two/httpi/blob/main/apps/example/src/utils/rest.ts)

@@ -31,11 +31,7 @@ export class CommandWithSubcommands extends Command {
             c.data.type === data.interaction.data?.options?.[0]?.type &&
             c.data.name === data.interaction.data?.options?.[0]?.name,
         );
-        if (!subcommand) {
-          return console.warn(
-            `Cannot find autocomplete subcommand with type ${data.interaction.data?.options?.[0]?.type}: ${data.interaction.data?.options?.[0]?.name}`,
-          );
-        }
+        if (!subcommand) return;
         return subcommand?.autocomplete?.(data);
       },
       execute: (data) => {
@@ -44,11 +40,7 @@ export class CommandWithSubcommands extends Command {
             c.data.type === data.interaction.data?.options?.[0]?.type &&
             c.data.name === data.interaction.data?.options?.[0]?.name,
         );
-        if (!subcommand) {
-          return console.warn(
-            `Cannot find subcommand with type ${data.interaction.data?.options?.[0]?.type}: ${data.interaction.data?.options?.[0]?.name}`,
-          );
-        }
+        if (!subcommand) return;
         return subcommand?.execute?.(data);
       },
     });

@@ -7,7 +7,7 @@ import { InteractionResponseType } from 'discord-api-types/v10';
  */
 export function createPingEvent() {
   return new Event({
-    execute: ({ respond }) => {
+    execute({ respond }) {
       return respond({
         type: InteractionResponseType.Pong,
       });

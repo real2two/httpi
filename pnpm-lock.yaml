@@ -33,9 +33,9 @@ importers:
       '@discordjs/rest':
         specifier: ^2.3.0
         version: 2.3.0
-      '@httpi/adapter-hyperexpress':
+      '@httpi/adapter-uwebsockets':
         specifier: workspace:*
-        version: link:../../packages/adapter-hyperexpress
+        version: link:../../packages/adapter-uwebsockets
       '@httpi/client':
         specifier: workspace:*
         version: link:../../packages/client
@@ -73,12 +73,6 @@ importers:
       discord-verify:
         specifier: ^1.2.0
         version: 1.2.0
-      form-data-encoder:
-        specifier: ^4.0.2
-        version: 4.0.2
-      formdata-node:
-        specifier: ^6.0.3
-        version: 6.0.3
       hyper-express:
         specifier: ^6.16.1
         version: 6.16.1
@@ -89,9 +83,28 @@ importers:
       '@types/node':
         specifier: ^20.12.12
         version: 20.12.12
-      typescript:
-        specifier: ^5.4.5
-        version: 5.4.5
+      unbuild:
+        specifier: ^2.0.0
+        version: 2.0.0(typescript@5.4.5)
+
+  packages/adapter-uwebsockets:
+    dependencies:
+      discord-api-types:
+        specifier: ^0.37.84
+        version: 0.37.84
+      discord-verify:
+        specifier: ^1.2.0
+        version: 1.2.0
+      uWebSockets.js:
+        specifier: github:uNetworking/uWebSockets.js#v20.43.0
+        version: https://codeload.github.com/uNetworking/uWebSockets.js/tar.gz/1977b5039938ad863d42fc4958d48c17e5a1fa06
+    devDependencies:
+      '@httpi/client':
+        specifier: workspace:*
+        version: link:../client
+      '@types/node':
+        specifier: ^20.12.12
+        version: 20.12.12
       unbuild:
         specifier: ^2.0.0
         version: 2.0.0(typescript@5.4.5)
@@ -105,9 +118,6 @@ importers:
       '@types/node':
         specifier: ^20.12.12
         version: 20.12.12
-      typescript:
-        specifier: ^5.4.5
-        version: 5.4.5
       unbuild:
         specifier: ^2.0.0
         version: 2.0.0(typescript@5.4.5)
@@ -1250,14 +1260,6 @@ packages:
 
   for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
-
-  form-data-encoder@4.0.2:
-    resolution: {integrity: sha512-KQVhvhK8ZkWzxKxOr56CPulAhH3dobtuQ4+hNQ+HekH/Wp5gSOafqRAeTphQUJAIk0GBvHZgJ2ZGRWd5kphMuw==}
-    engines: {node: '>= 18'}
-
-  formdata-node@6.0.3:
-    resolution: {integrity: sha512-8e1++BCiTzUno9v5IZ2J6bv4RU+3UKDmqWUQD0MIMVCd9AdhWkO1gw57oo1mNEX1dMq2EGI+FbWz4B92pscSQg==}
-    engines: {node: '>= 18'}
 
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
@@ -3770,10 +3772,6 @@ snapshots:
   for-each@0.3.3:
     dependencies:
       is-callable: 1.2.7
-
-  form-data-encoder@4.0.2: {}
-
-  formdata-node@6.0.3: {}
 
   fraction.js@4.3.7: {}
 
