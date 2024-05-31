@@ -8,8 +8,6 @@ If you're looking for the library `@httpi/client`, go to `packages/client` or cl
 
 Check out all our packages here: [https://www.npmjs.com/search?q=%40httpi](https://www.npmjs.com/search?q=%40httpi)
 
-Discord server: [https://discord.gg/qd8J527bCX](https://discord.gg/qd8J527bCX)
-
 ## Commands to run the example
 
 Click [here](https://github.com/real2two/httpi/tree/main/apps/example) to check out the example.

@@ -4,8 +4,6 @@
 
 A type-safe and performant HTTP interactions library for Discord with built-in handlers for TypeScript and JavaScript developers.
 
-Discord server: [https://discord.gg/qd8J527bCX](https://discord.gg/qd8J527bCX)
-
 Install using:
 
 ```bash
