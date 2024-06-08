@@ -1,14 +1,14 @@
 import { InteractionType } from 'discord-api-types/v10';
 
 import {
+  type Command,
+  type Component,
+  type Events,
   createAutocompleteEvent,
   createCommandEvent,
   createComponentEvent,
   createModalSubmitEvent,
   createPingEvent,
-  type Command,
-  type Component,
-  type Events,
 } from '../index.js';
 
 /**

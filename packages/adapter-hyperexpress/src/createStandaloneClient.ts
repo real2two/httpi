@@ -1,6 +1,6 @@
+import type { Events } from '@httpi/client';
 import HyperExpress from 'hyper-express';
 import { createHyperExpressAdapter } from './createHyperExpressAdapter';
-import type { Events } from '@httpi/client';
 
 /**
  * Start the bot using a standalone web server
@@ -18,7 +18,7 @@ export function createStandaloneClient({
   const app = new HyperExpress.Server();
 
   app.post(
-    '/interactions',
+    '/',
     createHyperExpressAdapter({
       publicKey,
       events,

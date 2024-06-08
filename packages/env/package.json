@@ -6,6 +6,6 @@
   "main": "src/index.ts",
   "devDependencies": {
     "@/tsconfig": "workspace:*",
-    "@types/node": "^20.12.12"
+    "@types/node": "^20.14.2"
   }
 }

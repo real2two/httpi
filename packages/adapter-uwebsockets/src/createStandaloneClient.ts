@@ -1,6 +1,6 @@
+import type { Events } from '@httpi/client';
 import uWebSockets from 'uWebSockets.js';
 import { createUWebsocketsAdapter } from './createUWebsocketsAdapter';
-import type { Events } from '@httpi/client';
 
 /**
  * Start the bot using a standalone web server
@@ -18,7 +18,7 @@ export function createStandaloneClient({
   uWebSockets
     .App()
     .post(
-      '/interactions',
+      '/',
       createUWebsocketsAdapter({
         publicKey,
         events,

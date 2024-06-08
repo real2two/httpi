@@ -1,6 +1,6 @@
 import env from '@/env';
-import { createEvents } from '@httpi/client';
 import { createStandaloneClient } from '@httpi/adapter-uwebsockets';
+import { createEvents } from '@httpi/client';
 
 import commands from '../utils/commands';
 import components from '../utils/components';

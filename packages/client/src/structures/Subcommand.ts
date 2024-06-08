@@ -1,6 +1,6 @@
 import {
-  APIApplicationCommandSubcommandOption,
-  APIApplicationCommandSubcommandGroupOption,
+  type APIApplicationCommandSubcommandGroupOption,
+  type APIApplicationCommandSubcommandOption,
   ApplicationCommandOptionType,
 } from 'discord-api-types/v10';
 import type { InteractionRequestWithUser } from '../index.js';

@@ -1,18 +1,18 @@
 {
   "name": "@httpi/adapter-uwebsockets",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "uWebSockets.js adapters for httpi",
   "author": "real2two",
   "type": "module",
   "main": "./dist/index.cjs",
   "types": "./dist/index.d.ts",
   "license": "CC0-1.0",
-  "homepage": "https://github.com/real2two/httpi/tree/main/packages/adapter-hyperexpress",
+  "homepage": "https://github.com/real2two/httpi/tree/main/packages/adapter-uwebsockets",
   "repository": {
     "type": "git",
     "url": "https://github.com/real2two/httpi.git",
-    "directory": "packages/adapter-hyperexpress"
+    "directory": "packages/adapter-uwebsockets"
   },
   "bugs": {
     "url": "https://github.com/real2two/httpi/issues"
@@ -28,13 +28,13 @@
   },
   "files": ["dist", "package.json"],
   "dependencies": {
-    "discord-api-types": "^0.37.84",
+    "discord-api-types": "^0.37.87",
     "discord-verify": "^1.2.0",
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
   },
   "devDependencies": {
     "@httpi/client": "workspace:*",
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.14.2",
     "unbuild": "^2.0.0"
   }
 }

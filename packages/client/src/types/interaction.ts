@@ -1,4 +1,4 @@
-import {
+import type {
   APIApplicationCommandAutocompleteResponse,
   APIBaseInteraction,
   APIInteractionResponseCallbackData,
@@ -13,6 +13,7 @@ import {
   InteractionType,
 } from 'discord-api-types/v10';
 
+// biome-ignore lint/suspicious/noExplicitAny:
 export type BaseInteraction = APIBaseInteraction<InteractionType, any>;
 
 export type CustomAPIInteractionResponse =
@@ -27,7 +28,7 @@ export type CustomAPIInteractionResponse =
 
 export interface InteractionResponseAttachment {
   name: string;
-  data: any;
+  data: WithImplicitCoercion<ArrayBuffer | SharedArrayBuffer>;
 }
 
 export interface CustomAPIInteractionResponseCallbackData

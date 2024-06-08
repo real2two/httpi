@@ -1,7 +1,7 @@
 import env from '@/env';
 
-import cluster from 'cluster';
-import { cpus } from 'os';
+import cluster from 'node:cluster';
+import { cpus } from 'node:os';
 
 // Sets the worker file to worker.ts
 cluster.setupPrimary({

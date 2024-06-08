@@ -1,6 +1,6 @@
 import env from '@/env';
-import commands from '../src/utils/commands';
 import { createCommands } from '@httpi/client';
+import commands from '../src/utils/commands';
 
 const result = await createCommands({
   id: env.DiscordClientId,

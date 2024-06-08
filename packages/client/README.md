@@ -26,7 +26,7 @@ pnpm i @httpi/adapter-uwebsockets
 import { createEvents } from '@httpi/client';
 import { createStandaloneClient } from '@httpi/adapter-uwebsockets';
 
-// Under "INTERACTIONS ENDPOINT URL" on https://discord.dev, add your link with the path "/interactions".
+// Under "INTERACTIONS ENDPOINT URL" on https://discord.dev, add your link.
 
 createStandaloneClient({
   port: 3000,

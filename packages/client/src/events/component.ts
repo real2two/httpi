@@ -1,4 +1,4 @@
-import { Event, type Component, type InteractionRequestDataWithUser } from '../index.js';
+import { type Component, Event, type InteractionRequestDataWithUser } from '../index.js';
 
 /**
  * Create a component event

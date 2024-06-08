@@ -17,20 +17,21 @@
     "ext": "ts, js"
   },
   "dependencies": {
-    "@httpi/client": "workspace:*",
-    "@httpi/adapter-uwebsockets": "workspace:*",
     "@/env": "workspace:*",
     "@discordjs/core": "^1.2.0",
     "@discordjs/rest": "^2.3.0",
+    "@httpi/adapter-hyperexpress": "workspace:*",
+    "@httpi/adapter-uwebsockets": "workspace:*",
+    "@httpi/client": "workspace:*",
     "dotenv-cli": "^7.4.2",
-    "hyper-express": "^6.16.1",
-    "tsx": "^4.10.3",
+    "hyper-express": "^6.16.3",
+    "tsx": "^4.14.0",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
     "@/tsconfig": "workspace:*",
-    "@types/node": "^20.12.12",
-    "discord-api-types": "^0.37.84",
-    "nodemon": "^3.1.0"
+    "@types/node": "^20.14.2",
+    "discord-api-types": "^0.37.87",
+    "nodemon": "^3.1.3"
   }
 }

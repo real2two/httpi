@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from 'node:fs';
 import { Subcommand } from '@httpi/client';
 import { InteractionResponseType } from 'discord-api-types/v10';
 

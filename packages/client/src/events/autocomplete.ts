@@ -1,5 +1,5 @@
-import { Event, type Command, type InteractionRequestDataWithUser } from '../index.js';
 import { ApplicationCommandType } from 'discord-api-types/v10';
+import { type Command, Event, type InteractionRequestDataWithUser } from '../index.js';
 
 /**
  * Create an autocomplete event

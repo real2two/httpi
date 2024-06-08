@@ -1,8 +1,8 @@
 export default {
-  WebsitePort: parseInt(process.env.WEBSITE_PORT || '0'),
-  WebsiteClusters: parseInt(process.env.WEBSITE_CLUSTERS || '0'),
+  WebsitePort: Number.parseInt(process.env.WEBSITE_PORT || '0'),
+  WebsiteClusters: Number.parseInt(process.env.WEBSITE_CLUSTERS || '0'),
 
-  DiscordClientId: process.env.DISCORD_CLIENT_ID!,
-  DiscordPublicKey: process.env.DISCORD_PUBLIC_KEY!,
-  DiscordToken: process.env.DISCORD_TOKEN!,
+  DiscordClientId: process.env.DISCORD_CLIENT_ID as string,
+  DiscordPublicKey: process.env.DISCORD_PUBLIC_KEY as string,
+  DiscordToken: process.env.DISCORD_TOKEN as string,
 };

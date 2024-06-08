@@ -1,7 +1,7 @@
 {
   "name": "@httpi/client",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple HTTP interactions library for Discord with built-in handlers",
   "author": "real2two",
   "type": "module",
@@ -28,10 +28,10 @@
   },
   "files": ["dist", "package.json"],
   "dependencies": {
-    "discord-api-types": "^0.37.84"
+    "discord-api-types": "^0.37.87"
   },
   "devDependencies": {
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.14.2",
     "unbuild": "^2.0.0"
   }
 }
