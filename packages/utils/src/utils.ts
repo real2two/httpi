@@ -1,3 +1,4 @@
+import { Buffer } from 'node:buffer';
 import type { CustomAPIInteractionResponse, InteractionResponseAttachment } from '@httpi/client';
 import type { RESTAPIAttachment } from 'discord-api-types/v10';
 

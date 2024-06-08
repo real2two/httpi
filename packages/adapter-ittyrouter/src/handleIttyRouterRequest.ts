@@ -57,15 +57,15 @@ export async function handleIttyRouterRequest({
           );
         }
         // Create attachment response
+        // This is where the FormData and boundary is given
         const { formData, boundary } = createMultipartResponse(message);
         // Responds with attachments (multipart/form-data)
-        return resolve(
-          new Response(formData, {
-            headers: {
-              'content-type': `multipart/form-data; boundary=${boundary}`,
-            },
-          }),
-        );
+        const response = new Response(formData, {
+          headers: {
+            'content-type': `multipart/form-data; boundary=${boundary}`,
+          },
+        });
+        return resolve(response);
       },
     });
   });

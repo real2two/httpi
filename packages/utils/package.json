@@ -1,7 +1,7 @@
 {
   "name": "@httpi/utils",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utilities for httpi",
   "author": "real2two",
   "type": "module",
