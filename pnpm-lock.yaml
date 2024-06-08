@@ -67,9 +67,9 @@ importers:
       '@discordjs/rest':
         specifier: ^2.3.0
         version: 2.3.0
-      '@httpi/adapter-uwebsockets':
+      '@httpi/adapter-hyperexpress':
         specifier: workspace:*
-        version: link:../../packages/adapter-uwebsockets
+        version: link:../../packages/adapter-hyperexpress
       '@httpi/client':
         specifier: workspace:*
         version: link:../../packages/client
@@ -143,28 +143,6 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(typescript@5.4.5)
 
-  packages/adapter-uwebsockets:
-    dependencies:
-      discord-api-types:
-        specifier: ^0.37.87
-        version: 0.37.87
-      discord-verify:
-        specifier: ^1.2.0
-        version: 1.2.0
-      uWebSockets.js:
-        specifier: github:uNetworking/uWebSockets.js#v20.43.0
-        version: https://codeload.github.com/uNetworking/uWebSockets.js/tar.gz/1977b5039938ad863d42fc4958d48c17e5a1fa06
-    devDependencies:
-      '@httpi/client':
-        specifier: workspace:*
-        version: link:../client
-      '@types/node':
-        specifier: ^20.14.2
-        version: 20.14.2
-      unbuild:
-        specifier: ^2.0.0
-        version: 2.0.0(typescript@5.4.5)
-
   packages/client:
     dependencies:
       discord-api-types:
@@ -197,9 +175,6 @@ importers:
       discord-verify:
         specifier: ^1.2.0
         version: 1.2.0
-      uWebSockets.js:
-        specifier: github:uNetworking/uWebSockets.js#v20.43.0
-        version: https://codeload.github.com/uNetworking/uWebSockets.js/tar.gz/1977b5039938ad863d42fc4958d48c17e5a1fa06
     devDependencies:
       '@httpi/client':
         specifier: workspace:*

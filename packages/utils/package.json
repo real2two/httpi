@@ -1,7 +1,7 @@
 {
   "name": "@httpi/utils",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utilities for httpi",
   "author": "real2two",
   "type": "module",
@@ -29,8 +29,7 @@
   "files": ["dist", "package.json"],
   "dependencies": {
     "discord-api-types": "^0.37.87",
-    "discord-verify": "^1.2.0",
-    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
+    "discord-verify": "^1.2.0"
   },
   "devDependencies": {
     "@httpi/client": "workspace:*",

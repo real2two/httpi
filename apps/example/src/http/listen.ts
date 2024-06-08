@@ -1,5 +1,5 @@
 import env from '@/env';
-import { createStandaloneClient } from '@httpi/adapter-uwebsockets';
+import { createStandaloneClient } from '@httpi/adapter-hyperexpress';
 import { createEvents } from '@httpi/client';
 
 import commands from '../utils/commands';

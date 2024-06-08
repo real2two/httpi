@@ -11,22 +11,22 @@ Install using:
 ```bash
 # npm
 npm i @httpi/client
-npm i @httpi/adapter-uwebsockets
+npm i @httpi/adapter-hyperexpress
 
 # yarn
 yarn add @httpi/client
-yarn add @httpi/adapter-uwebsockets
+yarn add @httpi/adapter-hyperexpress
 
 # pnpm
 pnpm i @httpi/client
-pnpm i @httpi/adapter-uwebsockets
+pnpm i @httpi/adapter-hyperexpress
 ```
 
 ### Create a standalone client
 
 ```js
 import { createEvents } from '@httpi/client';
-import { createStandaloneClient } from '@httpi/adapter-uwebsockets';
+import { createStandaloneClient } from '@httpi/adapter-hyperexpress';
 
 // Under "INTERACTIONS ENDPOINT URL" on https://discord.dev, add your link.
 
@@ -111,7 +111,6 @@ process.exit();
 
 If you want to use this library with another HTTP server library, you can use one of these adapters:
 
-- [uWebSockets.js adapter by real2two](https://github.com/real2two/httpi/tree/main/packages/adapter-uwebsockets)
 - [HyperExpress adapter by real2two](https://github.com/real2two/httpi/tree/main/packages/adapter-hyperexpress)
 - [itty-router adapter by real2two](https://github.com/real2two/httpi/tree/main/packages/adapter-ittyrouter)
 - [ElysiaJS adapter by desplmfao](https://github.com/desplmfao/httpi-elysia-adapter)
