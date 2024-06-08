@@ -1,5 +1,5 @@
 {
-  "name": "discord-related-utilities",
+  "name": "httpi",
   "version": "0.0.0",
   "workspaces": ["apps/*", "packages/*"],
   "scripts": {
