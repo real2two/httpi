@@ -3,7 +3,7 @@ import { Readable } from 'node:stream';
 import { verify } from 'discord-verify/node';
 import { createMultipartResponse } from '../../utils/src';
 
-import type { BaseInteraction, Events } from '@httpi/client';
+import type { BaseInteraction, Events, InteractionEnv } from '@httpi/client';
 import type HyperExpress from 'hyper-express';
 
 /**
@@ -12,6 +12,7 @@ import type HyperExpress from 'hyper-express';
  * @returns The middleware
  */
 export function createHyperExpressAdapter(opts: {
+  env?: InteractionEnv;
   publicKey: string;
   events: Events;
 }) {
@@ -36,6 +37,7 @@ export function createHyperExpressAdapter(opts: {
       // Handles interactions
       const interaction = JSON.parse(body) as BaseInteraction;
       return opts.events[interaction.type]?.execute({
+        env: opts.env ?? process.env,
         interaction,
         user: interaction.member?.user || interaction.user,
         async respond(message) {

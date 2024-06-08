@@ -56,7 +56,11 @@ export interface CustomAPIInteractionResponseCallbackData
   attachments?: InteractionResponseAttachment[] | undefined;
 }
 
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
+export type InteractionEnv = any;
+
 export interface InteractionRequestData {
+  env: InteractionEnv;
   interaction: BaseInteraction;
   user?: APIUser;
   respond: (message: CustomAPIInteractionResponse) => unknown | Promise<unknown>;

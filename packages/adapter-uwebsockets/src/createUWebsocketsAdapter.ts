@@ -3,7 +3,7 @@ import { Readable } from 'node:stream';
 import { verify } from 'discord-verify/node';
 import { createMultipartResponse } from '../../utils/src';
 
-import type { BaseInteraction, Events } from '@httpi/client';
+import type { BaseInteraction, Events, InteractionEnv } from '@httpi/client';
 import type uWebSockets from 'uWebSockets.js';
 
 /**
@@ -12,6 +12,7 @@ import type uWebSockets from 'uWebSockets.js';
  * @returns The middleware
  */
 export function createUWebsocketsAdapter(opts: {
+  env?: InteractionEnv;
   publicKey: string;
   events: Events;
 }) {
@@ -44,6 +45,7 @@ export function createUWebsocketsAdapter(opts: {
       try {
         const interaction = JSON.parse(body) as BaseInteraction;
         return opts.events[interaction.type]?.execute({
+          env: opts.env ?? process.env,
           interaction,
           user: interaction.member?.user || interaction.user,
           respond(message) {

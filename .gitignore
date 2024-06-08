@@ -53,3 +53,7 @@ cli/internal/ffi/libturborepo_ffi*.a
 *.t.rej
 *.t.orig
 .cram_env
+
+# Cloudflare Workers
+.dev.vars
+.wrangler/

@@ -20,8 +20,8 @@ export function createEvents({
   commands = [],
   components = [],
 }: {
-  commands: Command[];
-  components: Component[];
+  commands?: Command[];
+  components?: Component[];
 }): Events {
   return {
     [InteractionType.ApplicationCommandAutocomplete]: createAutocompleteEvent(commands),

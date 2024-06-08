@@ -20,7 +20,6 @@
     "@/env": "workspace:*",
     "@discordjs/core": "^1.2.0",
     "@discordjs/rest": "^2.3.0",
-    "@httpi/adapter-hyperexpress": "workspace:*",
     "@httpi/adapter-uwebsockets": "workspace:*",
     "@httpi/client": "workspace:*",
     "dotenv-cli": "^7.4.2",
