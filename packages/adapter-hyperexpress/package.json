@@ -1,7 +1,7 @@
 {
   "name": "@httpi/adapter-hyperexpress",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The HyperExpress adapter for httpi",
   "author": "real2two",
   "type": "module",
@@ -29,7 +29,6 @@
   "files": ["dist", "package.json"],
   "dependencies": {
     "discord-api-types": "^0.37.87",
-    "discord-verify": "^1.2.0",
     "hyper-express": "^6.16.3"
   },
   "devDependencies": {

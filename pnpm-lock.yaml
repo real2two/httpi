@@ -104,9 +104,6 @@ importers:
       discord-api-types:
         specifier: ^0.37.87
         version: 0.37.87
-      discord-verify:
-        specifier: ^1.2.0
-        version: 1.2.0
       hyper-express:
         specifier: ^6.16.3
         version: 6.16.3
@@ -126,9 +123,6 @@ importers:
       discord-api-types:
         specifier: ^0.37.87
         version: 0.37.87
-      discord-verify:
-        specifier: ^1.2.0
-        version: 1.2.0
       itty-router:
         specifier: ^5.0.17
         version: 5.0.17
