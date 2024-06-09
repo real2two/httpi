@@ -12,4 +12,4 @@ pnpm i @httpi/adapter-ittyrouter
 
 ## Example usage
 
-A Cloudflare Workers implementation example is shown here: [https://github.com/real2two/httpi/blob/main/apps/cfworkers-example/src/server.ts](https://github.com/real2two/httpi/blob/main/apps/cfworkers-example/src/server.ts)
+A Cloudflare Workers implementation example is shown here: [https://github.com/real2two/httpi/blob/main/apps/ittyrouter-cfworkers/src/server.ts](https://github.com/real2two/httpi/blob/main/apps/ittyrouter-cfworkers/src/server.ts)

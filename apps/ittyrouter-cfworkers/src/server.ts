@@ -22,7 +22,7 @@ router.post(
     }),
 );
 
-router.all('*', () => new Response('Not Found.', { status: 404 }));
+router.all('*', () => new Response('Not found', { status: 404 }));
 
 const server = { fetch: router.fetch };
 export default server;

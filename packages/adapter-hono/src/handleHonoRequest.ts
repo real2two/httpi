@@ -3,31 +3,29 @@ import { verify } from 'discord-verify/node';
 import { createMultipartResponse } from '../../utils/src';
 
 import type { BaseInteraction, Events, InteractionEnv } from '@httpi/client';
-import type { IRequest } from 'itty-router';
+import type { Context } from 'hono';
 
 /**
  * Create a HyperExpress middleware for HTTP interactions
  * @param opts The request, public key and events
  * @returns The middleware
  */
-export async function handleIttyRouterRequest({
-  request,
-  env,
+export async function handleHonoRequest({
+  context,
   publicKey,
   events,
 }: {
-  request: IRequest;
-  env?: InteractionEnv;
+  context: Context;
   publicKey: string;
   events: Events;
 }) {
   // Validates if the interaction is coming from Discord
-  const signature = request.headers.get('x-signature-ed25519');
-  const timestamp = request.headers.get('x-signature-timestamp');
-  const body = await request.text();
+  const signature = context.req.header('x-signature-ed25519');
+  const timestamp = context.req.header('x-signature-timestamp');
+  const body = await context.req.text();
 
   const isValid = await verify(body, signature, timestamp, publicKey, crypto.webcrypto.subtle);
-  if (!isValid) return new Response('Invalid signature', { status: 401 });
+  if (!isValid) return context.text('Invalid signature', 401);
 
   // Handles interactions
   const interaction = JSON.parse(body) as BaseInteraction;
@@ -35,10 +33,10 @@ export async function handleIttyRouterRequest({
   return new Promise((resolve) => {
     const resolvedTimeout = setTimeout(() => {
       resolved = true;
-      return resolve(new Response());
+      return resolve(context.text(''));
     }, 3000);
     events[interaction.type]?.execute({
-      env: env ?? process.env,
+      env: context.env,
       interaction,
       user: interaction.member?.user || interaction.user,
       async respond(message) {
@@ -47,13 +45,7 @@ export async function handleIttyRouterRequest({
         resolved = true;
         // @ts-ignore If message.data.attachments isn't a value, the message doesn't have attachments
         if (!message?.data?.attachments?.length) {
-          return resolve(
-            new Response(JSON.stringify(message), {
-              headers: {
-                'content-type': 'application/json',
-              },
-            }),
-          );
+          return resolve(context.json(message));
         }
         // Create attachment response
         // This is where the FormData and boundary is given
@@ -68,5 +60,5 @@ export async function handleIttyRouterRequest({
         );
       },
     });
-  });
+  }) as Promise<Response>;
 }
