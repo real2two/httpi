@@ -2,7 +2,7 @@ import crypto from 'node:crypto';
 import { verify } from 'discord-verify/node';
 import { createMultipartResponse } from '../../utils/src';
 
-import type { BaseInteraction, Events, InteractionEnv } from '@httpi/client';
+import type { BaseInteraction, Events } from '@httpi/client';
 import type { Context } from 'hono';
 
 /**
