@@ -112,6 +112,7 @@ process.exit();
 If you want to use this library with another HTTP server library, you can use one of these adapters:
 
 - [HyperExpress adapter by real2two](https://github.com/real2two/httpi/tree/main/packages/adapter-hyperexpress)
+- [Hono adapter by real2two](https://github.com/real2two/httpi/tree/main/packages/adapter-hono)
 - [itty-router adapter by real2two](https://github.com/real2two/httpi/tree/main/packages/adapter-ittyrouter)
 - [ElysiaJS adapter by desplmfao](https://github.com/desplmfao/httpi-elysia-adapter)
 
