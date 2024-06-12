@@ -11,11 +11,13 @@ import type { IRequest } from 'itty-router';
  * @returns The middleware
  */
 export async function handleIttyRouterRequest({
+  autoResolve = true,
   request,
   env,
   publicKey,
   events,
 }: {
+  autoResolve?: boolean;
   request: IRequest;
   env?: InteractionEnv;
   publicKey: string;
@@ -33,17 +35,19 @@ export async function handleIttyRouterRequest({
   const interaction = JSON.parse(body) as BaseInteraction;
   let resolved = false;
   return new Promise((resolve) => {
-    const resolvedTimeout = setTimeout(() => {
-      resolved = true;
-      return resolve(new Response());
-    }, 3000);
+    const resolvedTimeout = autoResolve
+      ? setTimeout(() => {
+          resolved = true;
+          return resolve(new Response());
+        }, 3000)
+      : null;
     events[interaction.type]?.execute({
       env: env ?? process.env,
       interaction,
       user: interaction.member?.user || interaction.user,
       async respond(message) {
         if (resolved) return null;
-        clearTimeout(resolvedTimeout);
+        if (resolvedTimeout) clearTimeout(resolvedTimeout);
         resolved = true;
         // @ts-ignore If message.data.attachments isn't a value, the message doesn't have attachments
         if (!message?.data?.attachments?.length) {

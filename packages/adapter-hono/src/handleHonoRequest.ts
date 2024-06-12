@@ -11,10 +11,12 @@ import type { Context } from 'hono';
  * @returns The middleware
  */
 export async function handleHonoRequest({
+  autoResolve = true,
   context,
   publicKey,
   events,
 }: {
+  autoResolve?: boolean;
   context: Context;
   publicKey: string;
   events: Events;
@@ -31,17 +33,19 @@ export async function handleHonoRequest({
   const interaction = JSON.parse(body) as BaseInteraction;
   let resolved = false;
   return new Promise((resolve) => {
-    const resolvedTimeout = setTimeout(() => {
-      resolved = true;
-      return resolve(context.text(''));
-    }, 3000);
+    const resolvedTimeout = autoResolve
+      ? setTimeout(() => {
+          resolved = true;
+          return resolve(context.text(''));
+        }, 3000)
+      : null;
     events[interaction.type]?.execute({
       env: context.env,
       interaction,
       user: interaction.member?.user || interaction.user,
       async respond(message) {
         if (resolved) return null;
-        clearTimeout(resolvedTimeout);
+        if (resolvedTimeout) clearTimeout(resolvedTimeout);
         resolved = true;
         // @ts-ignore If message.data.attachments isn't a value, the message doesn't have attachments
         if (!message?.data?.attachments?.length) {
