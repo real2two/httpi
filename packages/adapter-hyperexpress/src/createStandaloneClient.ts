@@ -17,6 +17,10 @@ export function createStandaloneClient({
 }) {
   const app = new HyperExpress.Server();
 
+  app.get('/', (_req, res) => {
+    res.setHeader('content-type', 'text/plain;charset=UTF-8').send('👋 Hello httpi!');
+  });
+
   app.post(
     '/',
     createHyperExpressAdapter({
