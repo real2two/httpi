@@ -15,8 +15,8 @@
     "dotenv-cli": "^7.4.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.8.0",
-    "turbo": "^2.0.3"
+    "@biomejs/biome": "^1.8.1",
+    "turbo": "^2.0.4"
   },
   "engines": {
     "node": ">=18"
