@@ -6,15 +6,9 @@
   "main": "src/http/clusters.ts",
   "scripts": {
     "start": "dotenv -e ../../.env -- tsx .",
-    "dev": "nodemon",
+    "dev": "dotenv -- tsx --watch-path=./src .",
     "format": "cd ../../ && pnpm format",
     "commands/create": "dotenv -e ../../.env -- tsx tools/createCommands.ts"
-  },
-  "nodemonConfig": {
-    "ignore": [".git", "node_modules"],
-    "watch": ["../../"],
-    "exec": "npm start",
-    "ext": "ts, js"
   },
   "dependencies": {
     "@/env": "workspace:*",
@@ -30,7 +24,6 @@
   "devDependencies": {
     "@/tsconfig": "workspace:*",
     "@types/node": "^20.14.6",
-    "discord-api-types": "^0.37.90",
-    "nodemon": "^3.1.3"
+    "discord-api-types": "^0.37.90"
   }
 }

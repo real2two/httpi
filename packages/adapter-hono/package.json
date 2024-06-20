@@ -1,7 +1,7 @@
 {
   "name": "@httpi/adapter-hono",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The Hono adapter for httpi",
   "author": "real2two",
   "type": "module",

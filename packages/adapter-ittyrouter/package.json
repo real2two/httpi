@@ -1,7 +1,7 @@
 {
   "name": "@httpi/adapter-ittyrouter",
   "private": false,
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The itty-router adapter for httpi",
   "author": "real2two",
   "type": "module",
