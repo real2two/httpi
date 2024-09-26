@@ -1,7 +1,7 @@
 {
   "name": "@httpi/utils",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Utilities for httpi",
   "author": "real2two",
   "type": "module",
@@ -28,12 +28,12 @@
   },
   "files": ["dist", "package.json"],
   "dependencies": {
-    "discord-api-types": "^0.37.90",
+    "discord-api-types": "^0.37.101",
     "discord-verify": "^1.2.0"
   },
   "devDependencies": {
     "@httpi/client": "workspace:*",
-    "@types/node": "^20.14.6",
+    "@types/node": "^22.7.3",
     "unbuild": "^2.0.0"
   }
 }

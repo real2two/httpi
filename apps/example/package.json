@@ -13,17 +13,17 @@
   "dependencies": {
     "@/env": "workspace:*",
     "@discordjs/core": "^1.2.0",
-    "@discordjs/rest": "^2.3.0",
+    "@discordjs/rest": "^2.4.0",
     "@httpi/adapter-hyperexpress": "workspace:*",
     "@httpi/client": "workspace:*",
     "dotenv-cli": "^7.4.2",
-    "hyper-express": "^6.16.3",
-    "tsx": "^4.15.6",
-    "typescript": "^5.4.5"
+    "hyper-express": "^6.17.2",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
   },
   "devDependencies": {
     "@/tsconfig": "workspace:*",
-    "@types/node": "^20.14.6",
-    "discord-api-types": "^0.37.90"
+    "@types/node": "^22.7.3",
+    "discord-api-types": "^0.37.101"
   }
 }
