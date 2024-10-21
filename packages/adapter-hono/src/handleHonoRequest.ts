@@ -1,5 +1,5 @@
 import crypto from 'node:crypto';
-import { verify } from 'discord-verify/node';
+import { verifyKey } from 'discord-interactions';
 import { createMultipartResponse } from '../../utils/src';
 
 import type { BaseInteraction, Events } from '@httpi/client';
@@ -26,7 +26,10 @@ export async function handleHonoRequest({
   const timestamp = context.req.header('x-signature-timestamp');
   const body = await context.req.text();
 
-  const isValid = await verify(body, signature, timestamp, publicKey, crypto.webcrypto.subtle);
+  if (!signature) return context.text('Missing signature', 400);
+  if (!timestamp) return context.text('Missing timestamp', 400);
+
+  const isValid = await verifyKey(body, signature, timestamp, publicKey);
   if (!isValid) return context.text('Invalid signature', 401);
 
   // Handles interactions

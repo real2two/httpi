@@ -1,6 +1,6 @@
 import crypto from 'node:crypto';
 import { Readable } from 'node:stream';
-import { verify } from 'discord-verify/node';
+import { verifyKey } from 'discord-interactions';
 import { createMultipartResponse } from '../../utils/src';
 
 import type { BaseInteraction, Events, InteractionEnv } from '@httpi/client';
@@ -24,13 +24,10 @@ export function createHyperExpressAdapter(opts: {
 
       const body = await req.text();
 
-      const isValid = await verify(
-        body,
-        signature,
-        timestamp,
-        opts.publicKey,
-        crypto.webcrypto.subtle,
-      );
+      if (!signature) return res.status(400).send('Missing signature');
+      if (!timestamp) return res.status(400).send('Missing timestamp');
+
+      const isValid = await verifyKey(body, signature, timestamp, opts.publicKey);
 
       if (!isValid) return res.status(401).send('Invalid signature');
 

@@ -1,5 +1,5 @@
 import crypto from 'node:crypto';
-import { verify } from 'discord-verify/node';
+import { verifyKey } from 'discord-interactions';
 import { createMultipartResponse } from '../../utils/src';
 
 import type { BaseInteraction, Events, InteractionEnv } from '@httpi/client';
@@ -28,7 +28,10 @@ export async function handleIttyRouterRequest({
   const timestamp = request.headers.get('x-signature-timestamp');
   const body = await request.text();
 
-  const isValid = await verify(body, signature, timestamp, publicKey, crypto.webcrypto.subtle);
+  if (!signature) return new Response('Missing signature', { status: 400 });
+  if (!timestamp) return new Response('Missing timestamp', { status: 400 });
+
+  const isValid = await verifyKey(body, signature, timestamp, publicKey);
   if (!isValid) return new Response('Invalid signature', { status: 401 });
 
   // Handles interactions

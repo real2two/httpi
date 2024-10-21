@@ -11,12 +11,12 @@
     "commands/create": "cd apps/example && pnpm commands/create"
   },
   "dependencies": {
-    "@changesets/cli": "^2.27.8",
+    "@changesets/cli": "^2.27.9",
     "dotenv-cli": "^7.4.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.2",
-    "turbo": "^2.1.2"
+    "@biomejs/biome": "^1.9.4",
+    "turbo": "^2.2.2"
   },
   "engines": {
     "node": ">=18"

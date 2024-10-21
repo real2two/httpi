@@ -1,7 +1,7 @@
 {
   "name": "@httpi/adapter-ittyrouter",
   "private": false,
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "The itty-router adapter for httpi",
   "author": "real2two",
   "type": "module",
@@ -28,13 +28,13 @@
   },
   "files": ["dist", "package.json"],
   "dependencies": {
-    "discord-api-types": "^0.37.101",
-    "discord-verify": "^1.2.0",
+    "discord-api-types": "^0.37.103",
+    "discord-interactions": "^4.1.0",
     "itty-router": "^5.0.18"
   },
   "devDependencies": {
     "@httpi/client": "workspace:*",
-    "@types/node": "^22.7.3",
+    "@types/node": "^22.7.7",
     "unbuild": "^2.0.0"
   }
 }

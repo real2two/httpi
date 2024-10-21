@@ -1,7 +1,7 @@
 {
   "name": "@httpi/adapter-hono",
   "private": false,
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The Hono adapter for httpi",
   "author": "real2two",
   "type": "module",
@@ -28,13 +28,13 @@
   },
   "files": ["dist", "package.json"],
   "dependencies": {
-    "discord-api-types": "^0.37.101",
-    "discord-verify": "^1.2.0",
-    "hono": "^4.6.3"
+    "discord-api-types": "^0.37.103",
+    "discord-interactions": "^4.1.0",
+    "hono": "^4.6.5"
   },
   "devDependencies": {
     "@httpi/client": "workspace:*",
-    "@types/node": "^22.7.3",
+    "@types/node": "^22.7.7",
     "unbuild": "^2.0.0"
   }
 }
